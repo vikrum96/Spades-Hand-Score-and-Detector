@@ -77,7 +77,7 @@ def calculate_score(hand):
     
     # Void or Singleton
     voids = sum(1 for count in suit_distribution.values() if count == 0) # Adds 1 for each suit that has no cards
-    singletons = sum(1 for count in suit_distribution.values() if count == 1) # Adds 1 for each suit that has 1 card'
+    singletons = sum(1 for count in suit_distribution.values() if count == 1) # Adds 1 for each suit that has 1 card
     if voids > 0 or singletons > 0:
         synergy += 0.5 if voids == 1 or singletons == 1 else 1
     
