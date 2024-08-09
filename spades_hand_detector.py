@@ -8,7 +8,7 @@ cap = cv2.VideoCapture(0)
 cap.set(3, 1280)
 cap.set(4, 720)
 
-model = YOLO("playingCards.pt")
+model = YOLO("playingCards.pt") # Pre-trained model
 # model = YOLO("../Yolo-Weights/yolov8n.pt")
 
 class_names = ['10C', '10D', '10H', '10S',
