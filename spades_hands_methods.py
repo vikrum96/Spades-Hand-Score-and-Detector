@@ -53,7 +53,7 @@ def calculate_score(hand):
     
     if sorted_suits == [3,3,3,4] or sorted_suits == [2,3,4,4]:
         distribution = 2 # Well-balanced hand
-    elif sorted_suits == [1, 3, 4, 5] or sorted_suits == [2, 3, 3, 5]:
+    elif sorted_suits == [1,3,4,5] or sorted_suits == [2,3,3,5]:
         distribution = 1  # Slightly imbalanced hand
     elif sorted_suits[3] >= 6 and sorted_suits[0] >= 2:
         distribution = 1.5 if sorted_suits[3] == 6 else 2  # Strongly imbalanced but advantageous hand
